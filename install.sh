@@ -13,6 +13,7 @@ install() {
 	printf "\e[33m[~] Moving to \$PATH...\e[0m\n"
 
 	sudo mv -fv /var/tmp/gg_$$ /usr/local/bin/gg
+ 	sudo mkdir -p /usr/local/share/man/man1
 	sudo mv -fv /var/tmp/gg_$$.1 /usr/local/share/man/man1/gg.1
 
 	echo
